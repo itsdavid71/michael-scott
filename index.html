@@ -20,7 +20,6 @@
             max-width: 100%;
             height: auto;
             border-radius: 8px;
-            margin-bottom: 20px;
         }
         .photo-gallery {
             display: flex;
@@ -97,6 +96,39 @@
             transform: translateY(0);
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
+        .person {
+            margin-bottom: 40px;
+        }
+
+        .video-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .video-item {
+            flex-basis: calc(33.333% - 20px);
+            margin-bottom: 20px;
+        }
+
+        .video-item video {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        @media (max-width: 768px) {
+            .video-item {
+                flex-basis: calc(50% - 10px);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .video-item {
+                flex-basis: 100%;
+            }
+        }
     </style>
 </head>
 <body>
@@ -133,6 +165,52 @@
     <h2>Карьера</h2>
     <p>После окончания школы Майкл поступил в университет Филадельфии, где изучал коммерцию. Он был очень успешным студентом и часто участвовал в различных деловых соревнованиях. После окончания университета Майкл начал свою карьеру в компании Dunder Mifflin, которая занималась продажей бумаги. В компании он начал как младший менеджер по продажам, но быстро продвинулся по карьерной лестнице. В 1990-х годах Майкл стал управляющим директором компании.</p>
 
+    <h2>Офисные видосики</h2>
+    <div class="video-gallery">
+        <div class="video-item">
+            <video controls>
+                <source src="reels/1.mp4" type="video/mp4">
+                Ваш браузер не поддерживает видео тег.
+            </video>
+        </div>
+        <div class="video-item">
+            <video controls>
+                <source src="reels/2.mp4" type="video/mp4">
+                Ваш браузер не поддерживает видео тег.
+            </video>
+        </div>
+        <div class="video-item">
+            <video controls>
+                <source src="reels/3.mp4" type="video/mp4">
+                Ваш браузер не поддерживает видео тег.
+            </video>
+        </div>
+        <div class="video-item">
+            <video controls>
+                <source src="reels/4.mp4" type="video/mp4">
+                Ваш браузер не поддерживает видео тег.
+            </video>
+        </div>
+        <div class="video-item">
+            <video controls>
+                <source src="reels/5.mp4" type="video/mp4">
+                Ваш браузер не поддерживает видео тег.
+            </video>
+        </div>
+        <div class="video-item">
+            <video controls>
+                <source src="reels/6.mp4" type="video/mp4">
+                Ваш браузер не поддерживает видео тег.
+            </video>
+        </div>
+        <div class="video-item">
+            <video controls>
+                <source src="reels/7.mp4" type="video/mp4">
+                Ваш браузер не поддерживает видео тег.
+            </video>
+        </div>
+        <!-- Здесь можно добавить больше видео в будущем -->
+    </div>
     
     <h2>Фотогалерея</h2>
     <div class="photo-gallery">
@@ -148,14 +226,14 @@
         <li>"Если бы у меня были две пули, и я был бы в комнате с Гитлером, Бен Ладеном и Тоби, я бы дважды выстрелил в Тоби."</li>
         <li>"Я объявляю банкротство!"</li>
         <li>"Вот что она сказала."</li>
-        <li>"Я люблю просыпаться под запах бекона. Однажды я даже поджарил свою ногу."</li>
+        <li>"Я люблю просыпаться пд запах бекона. Однажды я даже поджарил свою ногу."</li>
         <li>"Я не ненавижу это. Я просто не люблю это вообще и это ужасно."</li>
         <li>"Я знаю, что это непопулярное мнение, но я считаю, что дети - это будущее."</li>
         <li>"Я хочу, чтобы люди боялись, насколько сильно они меня любят."</li>
         <li>"Я не понимаю. Сначала вы ненавидите людей, а потом вы их любите. Почему вы все не можете быть как я - любить их сразу?"</li>
         <li>"Я не суеверный. Но я верю в удачу и судьбу и немного в магию."</li>
         <li>"Я не герой. Я просто парень, который не хочет видеть, как другой парень умирает. Потому что он должен мне деньги."</li>
-        <li>"Вебстер определяет свадьбу как: акт женитьбы или состояние быть женатым. Я определяю это как: мужество, преданность, воображение, страсть. Но также: страх, сомнение и сожаление."</li>
+        <li>"Вебстер определяет свадьбу как: акт женитьбы или состояние быть женатым. Я определяю это как: мужество, преданность, воображение, страсть. Н также: страх, сомнение и сожаление."</li>
         <li>"Я люблю внутренние шутки. Надеюсь, однажды я стану частью одной."</li>
         <li>"Я не суперстар. Я рок-звезда."</li>
         <li>"Я не понимаю. Мы получаем оплачиваемый отпуск, и нам все равно нужно приходить на работу?"</li>
@@ -164,13 +242,52 @@
         <li>"Я не понимаю. Если мы не можем шутить о терроризме, террористы побеждают."</li>
         <li>"Я не понимаю. Если мы не можем пить на работе, зачем вообще приходить?"</li>
         <li>"Я не понимаю. Если я не могу танцевать, это не моя революция."</li>
-        <li>"Я не понимаю. Если я не могу быть Брюсом Уэйном, я хочу быть Бэтменом."</li>
+        <li>"Я не понимаю. Если я не могу быть Брюсом Уэйном, я хо��у быть Бэтменом."</li>
         <li>"Я не понимаю. Если я не могу быть лучшим, я хочу быть худшим."</li>
         <li>"Я не понимаю. Если я не могу быть первым, я хочу быть мистером Правильным."</li>
         <li>"Я не понимаю. Если я не могу быть богатым, я хочу быть знаменитым."</li>
         <li>"Я не понимаю. Если я не могу быть умным, я хочу быть красивым."</li>
         <li>"Я не понимаю. Если я не могу быть счастливым, я хочу быть правым."</li>
         <li>"Я не понимаю. Если я не могу быть любимым, я хочу быть уважаемым."</li>
+    </ul>
+
+    <h2>Английские цитаты Майкла Скотта</h2>
+    <ul>
+        <li>"I'm not superstitious, but I am a little stitious."</li>
+        <li>"Sometimes I'll start a sentence and I don't even know where it's going. I just hope I find it along the way."</li>
+        <li>"If I had a gun with two bullets and I was in a room with Hitler, Bin Laden, and Toby, I would shoot Toby twice."</li>
+        <li>"I declare bankruptcy!"</li>
+        <li>"That's what she said."</li>
+        <li>"I love waking up to the smell of bacon. Sue me."</li>
+        <li>"I'm not a millionaire. I thought I would be by the time I was 30, but I wasn't even close. Then I thought maybe by 40, but by 40 I had less money than I did when I was 30."</li>
+        <li>"Would I rather be feared or loved? Easy. Both. I want people to be afraid of how much they love me."</li>
+        <li>"I'm not offended by homosexuality. In the '60s, I made love to many, many women, often outdoors, in the mud and the rain, and it's possible a man slipped in. There would be no way of knowing."</li>
+        <li>"I feel like all my kids grew up and then they married each other. It's every parent's dream."</li>
+        <li>"I'm an early bird and I'm a night owl. So I'm wise and I have worms."</li>
+        <li>"I don't hate it. I just don't like it at all and it's terrible."</li>
+        <li>"I know it's illegal in Pennsylvania, but it's for charity, and I consider myself a great philanderer."</li>
+        <li>"I'm not usually the butt of the joke. I'm usually the face of the joke."</li>
+        <li>"I love inside jokes. I'd love to be a part of one someday."</li>
+        <li>"I'm not a hero. I'm a good guy who runs over women with his car."</li>
+        <li>"Webster's Dictionary defines wedding as: The fusing of two metals with a hot torch. Well, you know something? I think you guys are two medals. Gold medals."</li>
+        <li>"I'm not a bad guy. I'm a guy who runs over women with his car."</li>
+        <li>"I'm not a mind reader, David. I don't know what you're thinking. I'm not a mind reader."</li>
+        <li>"I'm not a shark. I'm a dolphin."</li>
+        <li>"I'm not a perfectionist. I'm a perfectionist-ist."</li>
+        <li>"I'm not a procrastinator. I just wait until the last second to do my work because I will be older, and therefore wiser."</li>
+        <li>"I'm not a hugger. I'm a high-fiver."</li>
+        <li>"I'm not a fighter. I'm a lover. I'm also a fighter, so don't get any ideas."</li>
+        <li>"I'm not a racist. I just think it's interesting that Martin Luther King and I have the same birthday."</li>
+        <li>"I'm not a liar. I just create alternative facts."</li>
+        <li>"I'm not a quitter. I'm a starter who gives up quickly."</li>
+        <li>"I'm not a rule follower. I'm a rule suggester."</li>
+        <li>"I'm not a morning person. I'm a 'stay in bed until noon' person."</li>
+        <li>"I'm not a people person. I'm a 'specific people' person."</li>
+        <li>"I'm not a workaholic. I'm a funoholic, which is probably why I'm so poor."</li>
+        <li>"I'm not a planner. I'm an improviser with a general sense of direction."</li>
+        <li>"I'm not a pessimist. I'm an optimist who's been disappointed too many times."</li>
+        <li>"I'm not a failure. I'm a success at finding things that don't work."</li>
+        <li>"I'm not indecisive. I'm selectively decisive."</li>
     </ul>
 
     <div class="blacklist">
